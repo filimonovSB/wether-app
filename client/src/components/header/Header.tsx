@@ -3,11 +3,11 @@ import React, { FC, PropsWithChildren } from 'react'
 import styled from 'styled-components'
 import Select from 'react-select'
 
-import LocationIcon from './assets/icons/Location.svg'
+import LocationIcon from '../assets/icons/Location.svg'
 
-import FlexWrapper from './UI/FlexWrapper'
+import FlexWrapper from '../UI/FlexWrapper'
 
-import { ICity } from '../data/interfaces'  
+import { ICity } from '../../data/interfaces'  
 
 interface ICoords{
     lat:number,
@@ -123,22 +123,22 @@ export default Header
 
 const StyledHeader = styled.div`
     width: 100%;
-     padding-top:20px;
-     padding-bottom:20px;
+    padding-top:20px;
+    padding-bottom:20px;
 `
 const MenuList=styled.ul`
-     list-style: none;
-     display: flex;
+    display: flex;
+    list-style: none;
 `
 const MenuItem = styled.li`
-       margin-right: 40px;
-       padding-bottom:10px;
-       padding-left:5px;
-       @media (max-width:500px){
-        margin-right:30px;
+    margin-right: 40px;
+    padding-bottom:10px;
+    padding-left:5px;
+    @media (max-width:500px){
+      margin-right:30px;
     }
     @media (max-width:440px){
-        margin-right:5px;
+      margin-right:5px;
     }
 `
 
@@ -163,7 +163,6 @@ const SelectWrapper = styled.div`
         background-repeat:no-repeat;
         background-position:center top;
         background-size:contain;
-
   }
   &.dark{
     border: 1px solid white;

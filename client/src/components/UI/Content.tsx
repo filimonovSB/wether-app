@@ -21,18 +21,18 @@ const Content:FC<IContentProps> = ({children,switcher,theme}) => {
   }
 
   const StyledContent = styled.div`
-    padding: 112px 0;
     width: 100%;
+    padding: 112px 0;
     background-image: url(${theme === 'light' ? bgs.get(bg) : bgsDark.get(bg)});
     background-repeat:no-repeat;
     background-position: center top;
     background-size: cover;
     @media (max-width:768px){
       padding: 42px 0;
-      }
-      @media (max-width:500px){
+    }
+    @media (max-width:500px){
       padding: 65px 0;
-      }
+    }
 `
   return (
     <StyledContent>{children}</StyledContent>

@@ -2,9 +2,9 @@ import React, { FC,useState,useEffect } from 'react'
 
 import {  ICity, IWether } from './data/interfaces'
 import Layout from './components/UI/Llayout'
-import Header from './components/Header'
+import Header from './components/header/Header'
 import Content from './components/UI/Content'
-import WetherContent from './components/WetherContent'
+import WetherContent from './components/wether-content/WetherContent'
 import './global.css'
 
 import FlexWrapper from './components/UI/FlexWrapper'

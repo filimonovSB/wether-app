@@ -2,11 +2,11 @@ import React, { FC } from 'react'
 
 import styled from 'styled-components'
 
-import Box from './UI/Box'
-import FlexWrapper from './UI/FlexWrapper'
+import Box from '../UI/Box'
+import FlexWrapper from '../UI/FlexWrapper'
 
-import { conditions, iconsConditions } from '../utils/conditions'
-import { MyDate } from '../utils/date'
+import { conditions, iconsConditions } from '../../utils/conditions'
+import { MyDate } from '../../utils/date'
 
 interface IWetherContentProps  {
     temp:number,
@@ -68,7 +68,6 @@ const Wrap = styled.div`
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 37px 212px 122px 124px;
- 
     background: rgba(0, 0, 0, 0.3);
     @media (max-width:840px){
       padding: 37px 74px 122px 74px;
@@ -82,7 +81,6 @@ const Date = styled.div`
     font-size: 16px;
     line-height: 19px;
     color: #FFFFFF;
-
     @media (max-width:768px){
       font-size: 15px;
     }
